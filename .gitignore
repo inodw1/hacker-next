@@ -1,0 +1,22 @@
+## IDE Files
+.idea/
+.vscode/
+*.ipr
+*.iws
+*.iml
+
+## Dynamic Node Files
+node_modules/
+package-lock.json
+npm-debug.log
+
+
+## Webpack Build Files
+dist/
+static/*.*
+
+# OSX/Windows Folder Configs
+**/.DS_Store
+**/*.ini
+
+.next
