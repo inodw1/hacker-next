@@ -1,6 +1,7 @@
 import React from "react"
 import fetch from "isomorphic-fetch"
 import Error from "next/error"
+import StoryList from "../components/StoryList"
 class Index extends React.Component {
     static async getInitialProps() {
         let stories
@@ -23,15 +24,7 @@ class Index extends React.Component {
         return (
             <div>
                 <h1>hacker next</h1>
-                <div>
-                    {articles.map((article, index) => (
-                        /** no id or unique value in this api responses to represent the key */
-                        <div key={index}>
-                            <h2>{article.title}</h2>
-                            <p>{article.description}</p>
-                        </div>
-                    ))}
-                </div>
+                <StoryList articles={articles} />
             </div>
         )
     }
