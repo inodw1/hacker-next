@@ -4,7 +4,10 @@ import Error from "next/error"
 import StoryList from "../components/StoryList"
 import Layout from "../components/Layout"
 class Index extends React.Component {
-    static async getInitialProps() {
+    static async getInitialProps({ req, res, query }) {
+        /** we can access to req, res and query params in the get Initial props
+         * In here, I have de-structure the context object
+          */
         let stories
         try {
             /** 
