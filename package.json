@@ -4,9 +4,10 @@
   "description": "A Hacker News clone made with Next.js",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
-    "build": "next build"
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
+    "deploy": "now --public"
   },
   "author": "Inod Wagachchi",
   "license": "ISC",
